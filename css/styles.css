@@ -700,10 +700,11 @@ button {
   display: block;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing: 0.48px;
   color: var(--subtle-text);
   margin-bottom: 4px;
+
   /* margin-bottom: 8px; */
 }
 
@@ -724,7 +725,9 @@ button {
   padding-left: 38px;
   font-size: 18px;
   transition: border var(--transitio-dur-and-func);
-  background-color: var(--modal-background-color);
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color var(--transitio-dur-and-func);
 }
 
 .review-form-input:focus {
@@ -749,6 +752,7 @@ button {
 .review-form-input-wrapper {
   display: block;
   position: relative;
+  margin-bottom: 16px;
 }
 
 .review-form-message {
@@ -758,8 +762,13 @@ button {
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 8px 16px;
-  font-size: 18px;
-  transition: border var(--transitio-dur-and-func);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  transition: border-color var(--transitio-dur-and-func);
+  background-color: transparent;
+  outline: transparent;
 }
 
 .review-form-message:focus {
@@ -777,8 +786,7 @@ button {
 }
 
 .review-form-checkbox-label {
-  display: flex;
-  align-items: center;
+  display: block;
   font-size: 12px;
   font-weight: 400;
   line-height: 1.17;
@@ -792,19 +800,33 @@ button {
 }
 
 .review-form-own-checkbox {
-  cursor: pointer;
+  /* cursor: pointer;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   /* padding: 3px 2px; */
-  fill: transparent;
+  /* fill: transparent;
   transition: fill var(--transitio-dur-and-func),
     background-color var(--transitio-dur-and-func);
-  margin-right: 8px;
+  margin-right: 8px; */
 }
 
-.review-form-checkbox:checked + .review-form-own-checkbox {
+.custom-checkbox {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color var(--transitio-dur-and-func),
+    border var(--transitio-dur-and-func), fill var(--transitio-dur-and-func);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.review-form-checkbox:checked + .review-form-checkbox-label > .custom-checkbox {
   fill: var(--btn-bg-color);
   background-color: var(--active-link-color);
+  border: none;
 }
 
 .review-form-checkbox:focus + .review-form-own-checkbox {
@@ -813,7 +835,10 @@ button {
 
 .review-form-checkbox {
   position: absolute;
-  appearance: none;
+}
+
+.form-items-checkbox {
+  margin-bottom: 24px;
 }
 
 .review-form-btn {
