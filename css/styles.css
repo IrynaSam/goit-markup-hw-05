@@ -811,8 +811,8 @@ button {
   border: none;
 }
 
-.review-form-checkbox:focus + .review-form-own-checkbox {
-  outline: 1px solid var(--active-link-color);
+.review-form-checkbox:focus + .review-form-checkbox-label > .custom-checkbox {
+  border: 1px solid var(--active-link-color);
 }
 
 .review-form-checkbox {
