@@ -704,18 +704,7 @@ button {
   letter-spacing: 0.48px;
   color: var(--subtle-text);
   margin-bottom: 4px;
-
-  /* margin-bottom: 8px; */
 }
-
-/* .review-form-field-desc {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.7;
-  letter-spacing: 0.48px;
-  color: var(--subtle-text);
-  margin-bottom: 4px;
-} */
 
 .review-form-input {
   width: 100%;
@@ -785,6 +774,10 @@ button {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.form-items-textarea {
+  margin-bottom: 16px;
+}
+
 .review-form-checkbox-label {
   display: block;
   font-size: 12px;
@@ -797,17 +790,6 @@ button {
 
 .review-form-policy-link {
   color: var(--primary-acent-color);
-}
-
-.review-form-own-checkbox {
-  /* cursor: pointer;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  /* padding: 3px 2px; */
-  /* fill: transparent;
-  transition: fill var(--transitio-dur-and-func),
-    background-color var(--transitio-dur-and-func);
-  margin-right: 8px; */
 }
 
 .custom-checkbox {
