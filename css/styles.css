@@ -806,9 +806,9 @@ button {
 }
 
 .review-form-checkbox:checked + .review-form-checkbox-label > .custom-checkbox {
-  fill: var(--btn-bg-color);
   background-color: var(--active-link-color);
   border: none;
+  fill: var(--btn-bg-color);
 }
 
 .review-form-checkbox:focus + .review-form-checkbox-label > .custom-checkbox {
