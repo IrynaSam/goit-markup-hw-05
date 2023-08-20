@@ -808,6 +808,7 @@ button {
 .review-form-checkbox:checked + .review-form-checkbox-label > .custom-checkbox {
   background-color: var(--active-link-color);
   border: none;
+  border-color: var(--active-link-color);
   fill: var(--btn-bg-color);
 }
 
