@@ -812,13 +812,13 @@ button {
   fill: var(--btn-bg-color);
 }
 
-.review-form-checkbox:focus + .review-form-checkbox-label > .custom-checkbox {
+/* .review-form-checkbox:focus + .review-form-checkbox-label > .custom-checkbox {
   border: 1px solid var(--active-link-color);
-}
+} */
 
-.review-form-checkbox {
+/* .review-form-checkbox {
   position: absolute;
-}
+} */
 
 .form-items-checkbox {
   margin-bottom: 24px;
